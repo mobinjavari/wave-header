@@ -29,16 +29,6 @@
         top: 0;
         width: 100%;
 
-        .nav {
-            background: var(--bg-dark);
-            backdrop-filter: blur(20px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            height: 80px;
-            border-bottom: 1px solid #cccccc16;
-        }
-
         .title {
             height: 400px;
             background: var(--bg-color);
@@ -136,7 +126,7 @@
     }
 
     .main {
-        background: var(--bg-dark);
+        background: var(--bg-color);
         border-top: 1px solid #cccccc16;
         margin: 1080px 0 0 0;
         position: absolute;
@@ -146,8 +136,18 @@
         height: auto;
         text-align: center;
 
-        .service {
+        .nav {
             background: var(--bg-dark);
+            backdrop-filter: blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            height: 80px;
+            border-bottom: 1px solid #cccccc16;
+        }
+
+        .service {
+            background: var(--bg-color);
 
             .box-demo {
                 max-width: 1000px;

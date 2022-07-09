@@ -31,17 +31,6 @@
   top: 0;
   width: 100%;
 }
-.body .header .nav {
-  background: var(--bg-dark);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  height: 80px;
-  border-bottom: 1px solid rgba(204, 204, 204, 0.0862745098);
-}
 .body .header .title {
   height: 400px;
   background: var(--bg-color);
@@ -127,7 +116,7 @@
   animation-duration: 20s;
 }
 .body .main {
-  background: var(--bg-dark);
+  background: var(--bg-color);
   border-top: 1px solid rgba(204, 204, 204, 0.0862745098);
   margin: 1080px 0 0 0;
   position: absolute;
@@ -137,8 +126,19 @@
   height: auto;
   text-align: center;
 }
-.body .main .service {
+.body .main .nav {
   background: var(--bg-dark);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 80px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.0862745098);
+}
+.body .main .service {
+  background: var(--bg-color);
 }
 .body .main .service .box-demo {
   max-width: 1000px;
