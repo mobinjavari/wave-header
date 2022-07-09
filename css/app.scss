@@ -135,34 +135,38 @@
         }
     }
 
-    .service {
+    .main {
         background: var(--bg-dark);
         border-top: 1px solid #cccccc16;
         margin: 1080px 0 0 0;
-        position: sticky;
-        top: 79px;
+        position: absolute;
+        top: 0;
         z-index: 10;
         width: 100%;
         height: auto;
         text-align: center;
-    
-        .box-demo {
-            max-width: 1000px;
-            display: inline-block;
-            align-items: center;
-            text-align: center;
-            margin: 50px auto;
-            
-            .box-item {
-                width: 300px;
-                height: 250px;
-                background: linear-gradient(var(--background-gradient));
+
+        .service {
+            background: var(--bg-dark);
+
+            .box-demo {
+                max-width: 1000px;
                 display: inline-block;
-                margin: 20px 12px;
-                border-radius: 20px;
-                border: 1px solid #cccccc16;
+                align-items: center;
+                text-align: center;
+                margin: 50px auto;
+                
+                .box-item {
+                    width: 300px;
+                    height: 250px;
+                    background: linear-gradient(var(--background-gradient));
+                    display: inline-block;
+                    margin: 20px 12px;
+                    border-radius: 20px;
+                    border: 1px solid #cccccc16;
+                }
             }
-        }
+        }   
     }
 }
 
