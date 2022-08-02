@@ -12,7 +12,7 @@
       </tr>
       <tr>
         <td colspan="2"><br>
-          <img src="./assets/shot.png" alt="Wave Header" title="Wave Header">
+          <img src="./demo.png" alt="Wave Header" title="Wave Header">
         </td>
       </tr>
       <tr>
@@ -39,7 +39,7 @@
       </tr>
       <tr>
         <td colspan="2"><br>
-          <img src="./assets/shot.png" alt="Wave Header" title="Wave Header">
+          <img src="./demo.png" alt="Wave Header" title="Wave Header">
         </td>
       </tr>
       <tr>
