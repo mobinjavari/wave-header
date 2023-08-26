@@ -1,4 +1,5 @@
-@import "font";
+@import "fonts";
+@import "defines";
 
 * {
     margin: 0;
@@ -9,21 +10,21 @@
 
 :root {
     color-scheme: dark;
-    --bg-dark: #1D2A35;
-    --color-dark: #ccc;
-    --bg-color: #15202b;
-    --background-gradient: 135deg, #343377, #41438E ,#6764CB 0%, #837CBD 100%;
 }
 
 .body {
-    color: var(--color-dark);
-    background: var(--bg-color);
+    color: $color-dark;
+    background: $bg-color;
     direction: ltr;
     font-family: "chalkboard";
     height: 2500px;
 
+    .not-support-device {
+        display: none;
+    }
+
     .header {
-        background: var(--bg-color);
+        background: $bg-color;
         position: fixed;
         z-index: -1;
         top: 0;
@@ -31,7 +32,7 @@
 
         .title {
             height: 400px;
-            background: var(--bg-color);
+            background: $bg-color;
 
             .header-1 {
                 font-size: 30px;
@@ -46,9 +47,9 @@
 
         .header-gradient {
             background: #3D3D83;
-            background: -moz-linear-gradient(var(--background-gradient));
-            background: -webkit-linear-gradient(var(--background-gradient));
-            background: linear-gradient(var(--background-gradient));
+            background: -moz-linear-gradient($background-gradient);
+            background: -webkit-linear-gradient($background-gradient);
+            background: linear-gradient($background-gradient);
             border-bottom: 1px solid #ffffff47;
             width: 100%;
             text-align: center;
@@ -126,7 +127,7 @@
     }
 
     .main {
-        background: var(--bg-color);
+        background: $bg-color;
         border-top: 1px solid #cccccc16;
         margin: 950px 0 0 0;
         position: absolute;
@@ -137,17 +138,33 @@
         text-align: center;
 
         .nav {
-            background: var(--bg-dark);
+            background: $bg-dark;
             backdrop-filter: blur(20px);
             position: sticky;
             top: 0;
             z-index: 100;
             height: 80px;
             border-bottom: 1px solid #cccccc16;
+
+            .nav-logo {
+                max-width: 1080px;
+                width: 50%;
+                height: 100%;
+                display: block;
+
+                a {
+                    font-weight: bold;
+                    position: absolute;
+                    color: aliceblue;
+                    text-decoration: none;
+                    top: 30%;
+                    left: 10%;
+                }
+            }
         }
 
         .service {
-            background: var(--bg-color);
+            background: $bg-color;
 
             .box-demo {
                 max-width: 1000px;
@@ -159,7 +176,7 @@
                 .box-item {
                     width: 300px;
                     height: 250px;
-                    background: linear-gradient(var(--background-gradient));
+                    background: linear-gradient($background-gradient);
                     display: inline-block;
                     margin: 20px 12px;
                     border-radius: 20px;
@@ -175,6 +192,24 @@
     .gradient-wave {
         height: 40px;
         min-width: 40px;
+    }
+}
+
+@media (max-width: 322px) {
+    .not-support-device {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgb(79, 64, 193);
+        // filter: blur(100px);
+        text-align: center;
+        padding: 128px 0 0 0;
+        z-index: 1000;
+
+        p {
+            margin: 20px 0 0 0;
+        }
     }
 }
 

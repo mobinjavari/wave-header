@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./assets/css/app.css")
+    title Wave Header (:
+  body.body
+    section.not-support-device
+      b Sorry!
+      p This site not supported your device
+    header.header
+      section.title
+        section.center
+          h1.header-1 Welcome to wave header (:
+          p.description Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      section.header-gradient
+        section.gradient-wave
+          svg.waves(viewBox="0 24 150 28", preserveAspectRatio="none", shape-rendering="auto")
+            defs
+              path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+            g.parallax
+              use(xlink:href="#gentle-wave", x="48", y="0", fill="rgba(21,32,43,0.7")
+              use(xlink:href="#gentle-wave", x="48", y="3", fill="rgba(21,32,43,0.6)")
+              use(xlink:href="#gentle-wave", x="48", y="5", fill="rgba(21,32,43,0.5)")
+              use(xlink:href="#gentle-wave", x="48", y="7", fill="#15202b")
+    section.main
+      nav.nav
+        section.nav-logo
+          a(href="https://github.com/mobinjavari") Wave LOGO
+        section.nav-menu
+      section.service
+        .box-demo
+          each _ in Array.from({ length: 12 })
+            .box-item
+      section(style="height: 900px;")
+    script(src="./assets/js/script.js")
